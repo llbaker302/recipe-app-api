@@ -42,3 +42,11 @@ class AdminSiteTests(TestCase):
         result = self.client.get(url)
 
         self.assertEqual(result.status_code, 200)
+
+    def test_create_user_page(self):
+        """Test the create user page works."""
+
+        url = reverse("admin:core_user_add")
+        result = self.client.get(url)
+
+        self.assertEqual(result.status_code, 200)
