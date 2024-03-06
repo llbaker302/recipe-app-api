@@ -1,2 +1,3 @@
 flake8>=3.9.2,<=3.10
 black==24.2.0
+mypy==1.8.0 # Added but not used yet
