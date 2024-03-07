@@ -103,5 +103,5 @@ class PrivateRecipeAPITests(TestCase):
         url = detail_url(recipe.id)
         response = self.client.get(url)
 
-        serializer = RecipeSerializer(recipe)
+        serializer = RecipeDetailSerializer(recipe)
         self.assertEqual(response.data, serializer.data)
